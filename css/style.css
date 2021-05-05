@@ -159,12 +159,12 @@ header {
     margin-top: 2em;
 }
 
-.main {
+.about {
     padding: 50px 0;
     color: rgb(72, 40, 77);
 }
 
-.main p {
+.about p {
     font-size: .875rem;
     text-align: left;
     line-height: 1.875;
@@ -271,7 +271,7 @@ header {
         line-height: 1.35;
     }
 
-    .main p {
+    .about p {
         line-height: 1.875;
         
     }
