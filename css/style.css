@@ -1,0 +1,305 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*
+font-family: 'Josefin Sans', sans-serif; 
+*/
+
+body { 
+    margin:  0;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    line-height: 1.25;
+    font-weight: 400;
+    font-size: 2.0rem;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+p {
+    letter-spacing: normal;
+}
+
+.container {
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgb(72, 40, 77);
+    font-weight: 200;
+    padding: .75em .3em;
+    border: transparent;
+    text-transform: capitalize;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .9;
+}
+
+header {
+    background: #fa6a28;
+    padding: 1em 0;
+}
+
+.nav {
+   width: 100%; 
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: rgb(72, 40, 77);
+    position: absolute;
+    right: 0;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before, 
+.hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+/* come back later */
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    line-height: 1.875;
+}
+
+.nav_item {
+    margin-top: .75em;
+}
+
+.logo {
+    height: 30px;
+}
+
+.intro {
+    background: #fa6a28;
+    color: #FFFFFF;
+    padding: 70px 0;
+}
+
+.intro__text {
+    text-align: center;
+}
+
+.intro p {
+    margin-bottom: 3em;
+    line-height: 1.67;
+    font-size: 1.125rem;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+.intro__img, .why__shuleh--img {
+    margin-top: 2em;
+}
+
+.main {
+    padding: 50px 0;
+    color: rgb(72, 40, 77);
+}
+
+.main p {
+    font-size: .875rem;
+    text-align: left;
+    line-height: 1.875;
+}
+
+.about__title {
+    text-align: left;
+    line-height: 1.35;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about__section--secondary {
+    padding: 1em;
+}
+
+.why__shuleh {
+    /* background-color: rgb(72, 40, 77); */
+    background-color: #333131;
+    padding: 70px 0;
+}
+
+.why__shuleh--title {
+    color: #fff;
+    text-align: center;
+    line-height: 1.35;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.why__shuleh h3 {
+    color: #fa6a28;
+    text-align: center;
+    line-height: 1.41;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.why__shuleh p {
+    color: white;
+    font-size: .875rem;
+    text-align: center;
+    line-height: 1.875;
+    font-weight: 300;
+    margin-top: 2em;
+}
+
+
+@media (min-width: 700px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        height: auto;
+        align-items: center;
+        position: relative;
+        justify-content: flex-end;
+        transition: all .5s;
+    }
+
+    .nav__list {
+        display: flex;
+        margin: 0;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav__item {
+        margin: 0 0 0 1.5em;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .intro h1 {
+        font-size: 3.5rem;
+        line-height: 1.25;
+    }
+
+    .intro__text {
+        width: 60%;
+        letter-spacing: normal;
+        padding-left: 2em;
+        text-align: start;
+    }
+
+    .intro__img {
+        width: 40%;
+        align-self: start;
+        margin: 0;
+    }
+
+    .about__title {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.35;
+    }
+
+    .main p {
+        line-height: 1.875;
+        
+    }
+
+    .about__section--primary {
+        width: 60%;
+    }
+
+    .about__section--secondary {
+        width: 40%;
+    }
+
+    .col {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col + .col {
+        margin-left: 5em;
+    }
+
+    .why__shuleh--img {
+        align-self: start;
+    }
+
+
+}
+
+
