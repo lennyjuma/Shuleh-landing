@@ -254,6 +254,62 @@ header {
     margin-top: 2em;
 }
 
+/* app features sections */
+
+.features__section {
+    /* background-color: var(--clr-primary); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/app_features.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 70px 0;
+    text-align: left;
+}
+
+.features__section--title, .features__section p {
+    color: var(--clr-secondary);
+}
+
+.features__section--title {
+    font-size: var(--fs-h2);
+    color: var(--clr-light);
+    text-align: center;
+    margin: 1em 0;
+}
+
+.features__section h4 {
+    cursor: pointer;
+    margin: 0;
+    color: var(--clr-primary);
+}
+
+hr {
+    width: 50px;
+    margin: 1em 0;
+}
+
+hr.features__section--hr {
+    border: 2px solid var(--clr-secondary);
+}
+
+.features__section p {
+    font-weight: var(--fw-regular);
+}
+
+.features__section .col {
+    background-color: var(--clr-light);
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* partners section */
+.partners__section {
+    padding: 70px 0;
+    color: rgb(72, 40, 77);
+    text-align: center;
+}
+
 /* media queries */
 
 @media (min-width: 600px) {
