@@ -6,19 +6,53 @@
 font-family: 'Josefin Sans', sans-serif; 
 */
 
+/* custom properties styles */
+
+:root {
+    --ff-primary:'Josefin Sans', sans-serif; 
+
+    --fw-thin: 100;
+    --fw-extra-light: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --clr-light: #FFFFFF;
+    --clr-primary: #Fa6a28;
+    --clr-secondary: #333131;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 body { 
     margin:  0;
-    font-family: 'Josefin Sans', sans-serif; 
+    font-family: var(--ff-primary);
+    background: var(--clr-light);
+    font-size: var(--fs-body);
+    line-height: 1.6em;
 }
 
 img {
+    display: block;
     max-width: 100%;
 }
 
+h1, h2, h3 {
+    line-height: 1.1em;
+    margin: 0;
+}
+
 h1 {
-    line-height: 1.25;
-    font-weight: 400;
-    font-size: 2.0rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
     text-transform: capitalize;
     letter-spacing: normal;
 }
@@ -38,9 +72,9 @@ p {
 .btn {
     display: inline-block;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--clr-light);
     background-color: rgb(72, 40, 77);
-    font-weight: 200;
+    font-weight: var(--fw-regular);
     padding: .75em .3em;
     border: transparent;
     text-transform: capitalize;
@@ -51,11 +85,14 @@ p {
     opacity: .9;
 }
 
+
+/* header section styles */
 header {
-    background: #fa6a28;
+    background: var(--clr-primary);
     padding: 1em 0;
 }
 
+/* navbar section styles */
 .nav {
    width: 100%; 
 }
@@ -67,7 +104,7 @@ header {
     height: 3em;
     padding: 0;
     border-radius: 50%;
-    color: #FFFFFF;
+    color: var(--clr-light);
     background: rgb(72, 40, 77);
     position: absolute;
     right: 0;
@@ -101,13 +138,13 @@ header {
     transform: translateY(3px);
 }
 
-/* come back later */
+/* navbar section styles */
 .nav {
     visibility: hidden;
     height: 0;
     position: absolute;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
 }
 
 .nav--visible {
@@ -134,13 +171,15 @@ header {
 }
 
 .logo {
-    height: 30px;
+    height: 40px;
 }
 
+
+/* intro section styles */
 .intro {
-    background: #fa6a28;
-    color: #FFFFFF;
-    padding: 70px 0;
+    background: var(--clr-primary);
+    color: var(--clr-light);
+    padding: 80px 0;
 }
 
 .intro__text {
@@ -149,10 +188,11 @@ header {
 
 .intro p {
     margin-bottom: 3em;
-    line-height: 1.67;
-    font-size: 1.125rem;
-    font-weight: 300;
+    line-height: 2em;
+    font-size: .9rem;
+    font-weight: var(--fw-light);
     letter-spacing: normal;
+    
 }
 
 .intro__img, .why__shuleh--img {
@@ -170,51 +210,62 @@ header {
     line-height: 1.875;
 }
 
+/* about section styles */
 .about__title {
     text-align: left;
     line-height: 1.35;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
 }
 
 .about__section--secondary {
     padding: 1em;
 }
 
+/* why section styles */
 .why__shuleh {
     /* background-color: rgb(72, 40, 77); */
-    background-color: #333131;
+    background-color: var(--clr-secondary);
     padding: 70px 0;
 }
 
 .why__shuleh--title {
-    color: #fff;
+    color: var(--clr-light);
     text-align: center;
     line-height: 1.35;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-regular);
 }
 
 .why__shuleh h3 {
-    color: #fa6a28;
+    color: var(--clr-primary);
     text-align: center;
     line-height: 1.41;
-    font-size: 1.25rem;
-    font-weight: 400;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-regular);
 }
 
 .why__shuleh p {
     color: white;
     font-size: .875rem;
     text-align: center;
-    line-height: 1.875;
-    font-weight: 300;
+    line-height: 1.875em;
+    font-weight: var(--fw-light);
     margin-top: 2em;
 }
 
+/* media queries */
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
 
+    /* custom properties styles */
+    :root {
+        --fs-h1: 4.0rem;
+        --fs-h2: 3.75rem;
+        --fs-body: 1.125rem;
+    }
+
+    /* nav styles */
     .nav-toggle {
         display: none;
     }
@@ -242,13 +293,16 @@ header {
         margin: 0 0 0 1.5em;
     }
 
+    /* body styles */
     .row {
         display: flex;
         justify-content: space-between;
     }
 
+
+    /* intro styles */
     .intro h1 {
-        font-size: 3.5rem;
+        font-size: var(--fs-h1);
         line-height: 1.25;
     }
 
@@ -259,15 +313,25 @@ header {
         text-align: start;
     }
 
+    .intro p {
+        margin-bottom: 2em;
+        line-height: 2em;
+        font-size: 1.0rem;
+        font-weight: var(--fw-light);
+        letter-spacing: normal;
+        
+    }
+
     .intro__img {
         width: 40%;
         align-self: start;
         margin: 0;
     }
 
+    /* about styles */
     .about__title {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: var(--fs-h2);
         line-height: 1.35;
     }
 
@@ -295,10 +359,19 @@ header {
         margin-left: 5em;
     }
 
+    /* why shuleh styles */
     .why__shuleh--img {
         align-self: start;
     }
 
+    .why__shuleh p {
+        color: var(--clr-light);
+        font-size: .9rem;
+        text-align: center;
+        line-height: 1.875em;
+        font-weight: var(--fw-light);
+        margin-top: 2em;
+    }
 
 }
 
