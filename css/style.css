@@ -310,9 +310,20 @@ hr.features__section--hr {
     text-align: center;
 }
 
+.partners__section--img {
+    width: 100%;
+    display: flex;
+}
+
+.partners__section--img img {
+    height: 100px;
+    width: auto;
+    padding: 1em;
+}
+
 /* media queries */
 
-@media (min-width: 600px) {
+@media (min-width: 640px) and (min-width: 768) {
 
     /* custom properties styles */
     :root {
@@ -428,6 +439,19 @@ hr.features__section--hr {
         font-weight: var(--fw-light);
         margin-top: 2em;
     }
+
+}
+
+
+@media (min-width: 900px) {
+
+    /* custom properties styles */
+    :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 2.0rem;
+        --fs-body: 1rem;
+    }
+
 
 }
 
