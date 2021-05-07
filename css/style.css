@@ -375,8 +375,8 @@ hr.features__section--hr {
     }
 
     .circle {
-        /* clip-path: circle(600px at right 800px); */
-        clip-path: circle(495px at right 800px);
+        clip-path: circle(600px at right 800px);
+        /* clip-path: circle(495px at right 800px); */
         position: absolute;
         top: 0;
         left: 0;
