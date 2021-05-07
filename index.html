@@ -7,23 +7,26 @@
     <title>Shuleh</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;700&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/88858d97e1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
     
     <!-- header -->
+    <div class="circle"></div>
     <header>
         <div class="container row">
             <button class="nav-toggle" aria-label="open navigation">
                 <span class="hamburger"></span>
             </button>
             <a class="logo" href="index.html">
-                <img src="images/white-logo.png" alt="Shuleh white-logo" height="50px">
+                <img src="images/shulleh-gray.png" alt="Shuleh gray-logo">
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item nav__link--active"><a href="index.html" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Shuleh</a></li>
                     <li class="nav__item"><a href="#why_shuleh" class="nav__link">Why Shuleh</a></li>
                     <li class="nav__item"><a href="#features" class="nav__link">App Features</a></li>
@@ -37,30 +40,39 @@
     <section class="intro" id="intro">
         <div class="container row">
             <div class="intro__text">
-                <h1>Your Smart Education Management System</h1>
+                <h1>Your Smart Education <span>Management</span> System</h1>
                 <p>Get started by Signing Up your school today. Be first to experience all amazing features of Shuleh.</p>
                 <a href="#" class="btn">Register School</a>
+                <div class="social__links">
+                    <ul class="social__links--list">
+                        <li class="social__links--item"><a href="#" class="social__links--item"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__links--item"><a href="#" class="social__links--item"><i class="fab fa-instagram"></i></a></li>
+                        <li class="social__links--item"><a href="#" class="social__links--item"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <img src="images/Dashboard.png" alt="Image of Dashboard Analytics" class="intro__img">
+            <img src="images/student-removebg.png" alt="Image of Dashboard Analytics" class="intro__img">
         </div>
     </section>
 
     <!-- main section -->
-    <section class="about container row" id="about">
+    <section class="about" id="about">
         <!-- about section -->
-        <div class="about__section--primary">
-            <h2 class="about__title">About Shuleh</h2>
-            <p>Shuleh is an integrated school management platform that enables education institutions to serve its students and their parents and guardians.</p>
-            <p>Shuleh is developed for the school's administration and educators to ease day-to-day work of teaching, caring for and students.</p>
-            <p>Shuleh is a cloud based system that does not require any capital investment in technology to use. It can be used on the school's current computers.</p>
-            <p>Shuleh is designed to be easy to use, with intuitive processes that do not require any new skills from the users.</p>
-            <p>The platform is accessible through web and portals and mobile apps. It is supported by an integrated payments gateway and SMS messaging platform.</p>
-        </div>
+        <div class="container row">
+            <div class="about__section--primary">
+                <h2 class="about__title">About Shuleh</h2>
+                <p>Shuleh is an integrated school management platform that enables education institutions to serve its students and their parents and guardians.</p>
+                <p>Shuleh is developed for the school's administration and educators to ease day-to-day work of teaching, caring for and students.</p>
+                <p>Shuleh is a cloud based system that does not require any capital investment in technology to use. It can be used on the school's current computers.</p>
+                <p>Shuleh is designed to be easy to use, with intuitive processes that do not require any new skills from the users.</p>
+                <p>The platform is accessible through web and portals and mobile apps. It is supported by an integrated payments gateway and SMS messaging platform.</p>
+            </div>
 
-        <!-- video section -->
-        <div class="about__section--secondary">
-            <h2 class="about__title">How It Works</h2>
-        </div> 
+            <!-- video section -->
+            <div class="about__section--secondary">
+                <h2 class="about__title">How It Works</h2>
+            </div> 
+        </div>
     </section>
 
     <!-- why choose shuleh section -->
@@ -152,12 +164,13 @@
         <h2 class="partners__section-title">Our Partners</h2>
         <div class="container">
             <div class="partners__section--img">
-                <img src="/images/infobip.png" alt="">
-                <img src="/images/nbk.png" alt="">
-                <img src="/images/sts.png" alt="">
-                <img src="/images/ducont.png" alt="">
-                <img src="/images/compito-plus.png" alt="">
-                <img src="/images/openway.png" alt="">
+                <!-- <img src="/images/infobip.png" alt="">
+                <img src="/images/nbk.png" alt=""> -->
+                <!-- <img src="/images/crescent-tech.png" alt=""> -->
+                <!-- <img src="/images/sts.png" alt=""> -->
+                <!-- <img src="/images/ducont.png" alt=""> -->
+                <!-- <img src="/images/compito-plus.png" alt=""> -->
+                <!-- <img src="/images/openway.png" alt=""> -->
             </div>
         </div>
     </section>
