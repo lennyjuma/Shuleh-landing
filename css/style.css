@@ -3,13 +3,13 @@
 }
 
 /*
-font-family: 'Josefin Sans', sans-serif; 
+font-family: 'Montserrat', sans-serif; 
 */
 
 /* custom properties styles */
 
 :root {
-    --ff-primary:'Josefin Sans', sans-serif; 
+    --ff-primary:'Montserrat', sans-serif; 
 
     --fw-thin: 100;
     --fw-extra-light: 200;
@@ -52,7 +52,7 @@ h1, h2, h3 {
 
 h1 {
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
     text-transform: capitalize;
     letter-spacing: normal;
 }
@@ -81,6 +81,10 @@ p {
     text-transform: capitalize;
 }
 
+.btn .fa-arrow-right {
+    margin-left: 15px;
+}
+
 .btn:hover,
 .btn:focus {
     opacity: .9;
@@ -91,17 +95,6 @@ p {
 header {
     background: var(--clr-light);
     padding: 1em 0;
-}
-
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--clr-primary);
-    clip-path: circle(200px at center bottom);
-    opacity: .7;
 }
 
 /* navbar section styles */
@@ -189,21 +182,24 @@ header {
 .social__links--list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
     padding: 0px;
 }
 
 .social__links--item {
     margin-top: 30px;
-    margin-right: 15px;
 }
 
 .social__links--item .fa-facebook-f {
     color: #3C5B9A;
+    margin-right: 30px;
 }
 
 .social__links--item .fa-instagram {
     color: #FF5552;
+    margin-right: 30px;
 }
 
 .social__links--item .fa-twitter {
@@ -211,7 +207,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    height: 50px;
 }
 
 
@@ -219,7 +215,7 @@ header {
 .intro {
     background: var(--clr-light);
     color: var(--clr-secondary);
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 .intro__text {
@@ -234,7 +230,7 @@ header {
     margin-bottom: 3em;
     line-height: 2em;
     font-size: 1rem;
-    font-weight: var(--fw-ligh);
+    font-weight: var(--fw-light);
     letter-spacing: normal;
     color: black;
     
@@ -380,7 +376,15 @@ hr.features__section--hr {
 
     .circle {
         /* clip-path: circle(600px at right 800px); */
-        clip-path: circle(50% at 100% 100%);
+        clip-path: circle(495px at right 800px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--clr-primary);
+        /* clip-path: circle(50% at 100% 100%); */
+        opacity: .7
     }
     
 
@@ -421,6 +425,20 @@ hr.features__section--hr {
         margin: 0 0 0 1.5em;
     }
 
+    .social__links--list {
+        list-style: none;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .social__links--item {
+        margin-top: 48px;
+        margin-right: 15px;
+    }
+
     /* body styles */
     .row {
         display: flex;
@@ -429,13 +447,8 @@ hr.features__section--hr {
 
 
     /* intro styles */
-
-    .intro {
-        height: calc(100vh - 72px);
-    }
-    
     .intro h1 {
-        font-size: var(--fs-h1);
+        font-size: 3.5rem;
         line-height: 1.25;
         margin-top: 0;
     }
@@ -449,15 +462,17 @@ hr.features__section--hr {
     .intro p {
         margin-bottom: 2em;
         line-height: 2em;
-        font-size: 1.0rem;
-        font-weight: var(--fw-light);
+        font-size: .8rem;
+        font-weight: 400;
         letter-spacing: normal;
+        color: #7D7D7D;
         
     }
 
     .intro__img {
         width: 40%;
         align-self: start;
+        max-width: 300px;
         margin: 0;
     }
 
@@ -469,7 +484,7 @@ hr.features__section--hr {
     }
 
     .about p {
-        line-height: 1.875;
+        line-height: 1.875em;
         
     }
 
