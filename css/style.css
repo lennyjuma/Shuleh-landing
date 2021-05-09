@@ -93,13 +93,15 @@ p {
 
 /* header section styles */
 header {
-    background: var(--clr-light);
-    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
 }
 
 /* navbar section styles */
 .nav {
-   width: 100%; 
+   background: var(--clr-secondary);
+   width: 100%;
 }
 
 .nav-toggle {
@@ -113,6 +115,30 @@ header {
     background: var(--clr-primary);
     position: absolute;
     right: 0;
+    z-index: 1000;
+}
+
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+    margin: 1em;
+    
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -127,6 +153,7 @@ header {
     margin: 0 auto;
     height: 3px;
     background: white;
+    transition: transform 750ms ease-in-out;
 }
 
 .hamburger::before, 
@@ -145,24 +172,28 @@ header {
 
 /* navbar section styles */
 .nav {
-    visibility: hidden;
-    height: 0;
-    position: absolute;
     font-size: var(--fs-body);
     font-weight: var(--fw-regular);
-}
-
-.nav--visible {
-    visibility: visible;
     height: auto;
-    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform 750ms ease-in-out;
 }
 
 .nav__list {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-align: center;
 }
 
 .nav__link {
@@ -173,6 +204,10 @@ header {
 
 .nav__link--active {
     border-bottom: 3px solid var(--clr-primary);
+}
+
+.nav__link:hover {
+    color: var(--clr-primary);
 }
 
 .nav_item {
@@ -386,7 +421,6 @@ hr.features__section--hr {
         /* clip-path: circle(50% at 100% 100%); */
         opacity: .7
     }
-    
 
     /* nav styles */
     .nav-toggle {
@@ -394,17 +428,20 @@ hr.features__section--hr {
     }
 
     .nav {
-        visibility: visible;
-        display: flex;
+        background: var(--clr-light);
+        transition: none;
         height: auto;
-        align-items: center;
         position: relative;
+        width: 100%;
+        display: flex;
         justify-content: flex-end;
-        transition: all .5s;
+        align-items: center;
+        transform: none;
     }
 
     .nav__list {
         display: flex;
+        flex-direction: row;
         margin: 0;
     }
 
@@ -523,17 +560,5 @@ hr.features__section--hr {
 
 }
 
-
-@media (min-width: 900px) {
-
-    /* custom properties styles */
-    :root {
-        --fs-h1: 2.5rem;
-        --fs-h2: 2.0rem;
-        --fs-body: 1rem;
-    }
-
-
-}
 
 
