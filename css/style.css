@@ -360,7 +360,7 @@ header {
     align-items: center;
     color: var(--clr-light);
     font-weight: 300;
-    margin: 0 0 2em 0;
+    margin: 1em 0;
 }
 
 .features__section--icon-1 {
@@ -732,6 +732,12 @@ input[type=text], input[type=email], textarea {
         line-height: 1.875em;
         font-weight: var(--fw-light);
         margin-top: 2em;
+    }
+
+    /* contact section styles */
+    .contacts__section .form {
+            max-width: 800px;
+            margin: 0 auto;
     }
 }
 

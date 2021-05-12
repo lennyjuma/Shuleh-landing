@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/white-logo.png" alt="Shuleh gray-logo" width="160px">
+        </a>
+
+        <section class="reg-form__section">
+            <div class="container">
+                <form action="">
+                    <h2 class="reg-form__section--title">Shuleh Registration Form</h2>
+                    <p>Fill the form to make an application for a personalized Shuleh school portal.</p>
+                    <div class="row form">
+                        <h3>School Details</h3>
+                        <div class="col">
+                            <div>
+                                <label for="school_name">School's Name</label>
+                                <input type="text" name="school_name" placeholder="Enter school's name" required>
+                            </div>
+                        <div>
+                                <label for="school_email">School's Email</label>
+                                <input type="email" name="school_email" placeholder="Enter school's email" required>
+                        </div>
+                            <div>
+                                <label for="school_number">School's Phone Number</label>
+                                <input type="number" name="school_number" placeholder="Enter school's Phone number" required>
+                            </div>
+                            <div>
+                                <label for="school_physical_address">School's Physical Address</label>
+                                <input type="text" name="school_physical_address" placeholder="Enter school's physical address" required>
+                            </div>
+                            <div>
+                                <label for="school_country">Country</label>
+                                <input type="text" name="school_country" placeholder="Enter country where school is located" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row form">
+                        <h3>Administrator's Information</h3>
+                        <div class="col">
+                            <div>
+                                <label for="first_name">First Name</label>
+                                <input type="text" name="first_name" placeholder="Enter your first name" required>
+                            </div>
+                            <div>
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="last_name" placeholder="Enter your last name" required>
+                            </div>
+                        <div>
+                                <label for="admin_email">Your Email</label>
+                                <input type="email" name="admin_email" placeholder="Enter your email address" required>
+                        </div>
+                            <div>
+                                <label for="admin_number">Your Phone Number</label>
+                                <input type="number" name="admin_number" placeholder="Enter your Phone number" required>
+                            </div>
+                            <div>
+                                <label for="admin_national_id">Your National ID</label>
+                                <input type="number" name="admin_national_id" placeholder="Enter your National ID" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit" class="reg-form__section--btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <p class="footnote"> ©2021 Shuleh developed by <span><a href="https://nouveta.tech/" target="_blank" rel="nofollow noopener">Nouveta LTD</a></span>.</p>
+    </header>
+</body>
+</html>

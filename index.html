@@ -44,7 +44,7 @@
             <div class="intro__text">
                 <h1>Your Smart Education <span> Management</span> System</h1>
                 <p>Get started by Signing Up your school today. Be first to experience all amazing features of Shuleh. Register with us now.</p>
-                <a href="#" class="btn">Register School <i class="fas fa-arrow-right"></i></a>
+                <a href="register_school.html" class="btn">Register School <i class="fas fa-arrow-right"></i></a>
                 <div class="social__links">
                     <ul class="social__links--list">
                         <li class="social__links--item"><a href="#" class="social__links--item"><i class="fab fa-facebook-f"></i></a></li>
@@ -199,34 +199,36 @@
     <!-- contact us -->
     <section class="contacts__section" id="contacts">
         <div class="container">
-            <h2 class="contacts__section--title">Contact Us</h2>
-            <div class="row form">
-                <div class="col">
+            <form action="">
+                <h2 class="contacts__section--title">Contact Us</h2>
+                <div class="row form">
+                    <div class="col">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Name">
+                        </div>
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="Name">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="Email">
                     </div>
-                   <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Email">
-                   </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" placeholder="Subject">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea type="text" id="message" name="message" placeholder="Type your message here.." rows="4" cols="50"></textarea>
                     </div>
                 </div>
-            </div>
-            <div>
-                <button type="submit" name="submit" class="contacts__section--btn">Submit</button>
-            </div>
+                <div class="row form">
+                    <div class="col">
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea type="text" id="message" name="message" placeholder="Type your message here.." rows="4" cols="50"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <button type="submit" name="submit" class="contacts__section--btn">Submit</button>
+                </div>
+            </form>    
             <p class="footnote"> ©2021 Shuleh developed by <span><a href="https://nouveta.tech/" target="_blank" rel="nofollow noopener">Nouveta LTD</a></span>.</p>
         </div>
     </section>
