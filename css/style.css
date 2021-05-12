@@ -276,14 +276,15 @@ header {
     
 }
 
-.intro__img {
+.intro__img, .why__shuleh--img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
 }
 .intro__img, .why__shuleh--img {
     margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /* about section styles */
@@ -331,6 +332,7 @@ header {
     line-height: 1.41;
     font-size: var(--fs-h3);
     font-weight: var(--fw-regular);
+    margin: 2em 0 0;
 }
 
 .why__shuleh p {
