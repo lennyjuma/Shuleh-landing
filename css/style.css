@@ -404,7 +404,6 @@ header {
 }
 
 .features__section h4 {
-    cursor: pointer;
     margin: 0;
     font-size: 1.2rem;
     color: #37474F;
@@ -496,6 +495,83 @@ hr.partners__section--hr {
     visibility: hidden;
 } */
 
+/* contact us form */
+
+.contacts__section {
+    /* background-color: #01203a; */
+    background-color: var(--clr-secondary);
+    padding: 70px 0;
+}
+
+.contacts__section--title {
+    font-size: var(--fs-h2);
+    color: var(--clr-light);
+    text-align: center;
+    margin: 1em 0;
+    font-weight: 500;
+}
+
+.contacts__section label {
+    display: block;
+    color: white;
+    margin-bottom: .77em;
+}
+
+.contacts__section input, textarea {
+    width: 100%;
+    background: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0;
+    border-bottom: 1px solid var(--clr-light);
+    outline: none;
+}
+
+.contacts__section input:hover, 
+.contacts__section textarea:hover {
+    border-width: 1px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+}
+
+.contacts__section--btn {
+    width: 100%;
+    background: var(--clr-light);
+    padding: 1em;
+    color: var(--clr-secondary);
+    font-weight: var(--fw-light);
+    border: none;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color:var(--clr-light);
+}
+  
+:-ms-input-placeholder { /* Internet Explorer */
+    color: var(--clr-light);
+}
+  
+::placeholder {
+    color: var(--clr-light);
+}
+
+input[type=text], input[type=email], textarea {
+    color: var(--clr-light);
+}
+
+.footnote {
+    line-height: 1.79em;
+    text-align: center;
+    font-size: 14px;
+    color: var(--clr-light);
+    margin-top: 40px;
+}
+
+.footnote span a{
+    color: var(--clr-light);
+}
 
 /* media queries */
 
@@ -657,7 +733,6 @@ hr.partners__section--hr {
         font-weight: var(--fw-light);
         margin-top: 2em;
     }
-
 }
 
 
