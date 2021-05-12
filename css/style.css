@@ -736,6 +736,10 @@ input[type=text], input[type=email], textarea {
         margin-top: 2em;
     }
 
+    .row__img {
+        flex-direction: row-reverse;
+    }
+
     /* contact section styles */
     .contacts__section .form {
             max-width: 800px;
