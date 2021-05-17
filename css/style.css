@@ -409,9 +409,9 @@ header {
 
 .features__section h4 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     color: #37474F;
-    font-weight: var(--fw-regular);
+    font-weight: 500;
 }
 
 hr {
@@ -425,7 +425,7 @@ hr.features__section--hr {
 
 .features__section p {
     font-weight: var(--fw-light);
-    font-size: 0.95rem;
+    font-size: 0.875rem;
 }
 
 
@@ -722,6 +722,15 @@ input[type=text], input[type=email], textarea {
 
     .col + .col {
         margin-left: 5em;
+    }
+
+        
+    .features__section .col {
+        background-color: var(--clr-light);
+        margin-bottom: 2em;
+        padding: 0 1em;
+        border-radius: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     /* why shuleh styles */
