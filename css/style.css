@@ -565,7 +565,7 @@ input[type=text], input[type=email], textarea {
     color: var(--clr-light);
 }
 
-.footnote {
+/* .footnote {
     line-height: 1.79em;
     text-align: center;
     font-size: 14px;
@@ -575,7 +575,7 @@ input[type=text], input[type=email], textarea {
 
 .footnote span a{
     color: var(--clr-light);
-}
+} */
 
 /* media queries */
 
