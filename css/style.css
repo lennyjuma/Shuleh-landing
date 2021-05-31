@@ -290,21 +290,49 @@ header {
 /* about section styles */
 .about {
     padding: 50px 0;
-    background-color: #FAFAFA;
     color: var(--clr-secondary);
+}
+
+
+.about__section--bg {
+    background: #FAFAFA, url(/images/bg-about__us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 90px 0px 90px 0px;
+}
+
+
+.about__section--primary span {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--clr-primary);
+    line-height: 200%;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--clr-secondary);
+    line-height: 130%;  
+}
+
+.about__section--line {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--clr-primary);
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .about p {
     font-size: .875rem;
     text-align: left;
     line-height: 1.875;
-}
-
-.about__title {
-    text-align: left;
-    line-height: 1.35;
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-bold);
 }
 
 .about__section--secondary {
@@ -663,6 +691,11 @@ input[type=text], input[type=email], textarea {
 
 
     /* intro styles */
+
+    .intro {
+        overflow: hidden;
+        position: relative;
+    }
     .intro h1 {
         font-size: var(--fs-h1);
         line-height: 1.25em;
@@ -691,13 +724,25 @@ input[type=text], input[type=email], textarea {
         align-self: start;
         max-width: 300px;
         margin: 0;
+        position: absolute;
+        right: 0;
     }
 
     /* about styles */
+
+    .about__section--bg {
+        background-image: url(/images/bg-about__us.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 90px 0px 90px 0px;
+    }
+
     .about__title {
-        text-align: center;
-        font-size: var(--fs-h2);
-        line-height: 1.35;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--clr-secondary);
+        line-height: 130%;  
     }
 
     .about p {
@@ -757,6 +802,3 @@ input[type=text], input[type=email], textarea {
             margin: 0 auto;
     }
 }
-
-
-
