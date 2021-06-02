@@ -293,9 +293,9 @@ header {
     color: var(--clr-secondary);
 }
 
-
 .about__section--bg {
-    background: #FAFAFA, url(/images/bg-about__us.jpg);
+    background-color: #FAFAFA;
+    background-image: url(/images/bg-about__us.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -729,14 +729,6 @@ input[type=text], input[type=email], textarea {
     }
 
     /* about styles */
-
-    .about__section--bg {
-        background-image: url(/images/bg-about__us.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        padding: 90px 0px 90px 0px;
-    }
 
     .about__title {
         font-size: 2rem;
